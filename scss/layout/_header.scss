@@ -1,0 +1,113 @@
+.header{
+    background-image: linear-gradient(to right bottom, var(--color-grey-light-1), var(--color-grey-light-2));
+    
+    padding: 2rem 6rem;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__logo{
+        height: 3.5rem;
+    }
+
+
+    &__search{
+        flex: 0 0 60%;
+        display: flex;
+        justify-content: center;
+
+        input{
+            width: 60%;
+            height: 4rem;
+            padding: 1rem 3rem;
+            font-size: inherit;
+            font-family: inherit;
+            margin-right: -4.5rem;
+            border-radius: 4rem;
+            color: var(--color-grey-dark-2);
+            outline: none;
+            border: none;
+            transition: all 0.3s;
+
+            &::-webkit-input-placeholder{
+                color: var(--color-grey-dark-3);
+            }
+
+            &:focus{
+                width: 70%;
+            }
+        }
+
+        button{
+            border: none;
+            outline: none;
+            background: transparent;
+
+            svg{
+                height: 2rem;
+                width: 2rem;
+                fill: var(--color-grey-dark-3)
+            }
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 0 12%;
+    }
+
+    &__icon{
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+        
+        @include center-hz-vz;
+
+        &:hover svg{
+            transform: translateY(-0.3rem);
+        }
+
+        &:hover span{
+            transform: translateY(-0.3rem);
+        }
+
+        svg{
+           height: 70%;
+           width: 70%;
+           fill: var(--color-grey-dark-2);
+           transition: all 0.3s ease;
+        }
+
+        span{
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            font-size: 1.4rem;
+            color: var(--color-white);
+            position: absolute;
+            padding: 0.3rem;
+            top: -1rem;
+            right: -1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+}

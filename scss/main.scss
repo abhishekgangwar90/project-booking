@@ -1,4 +1,7 @@
-h1{
-    font-size: 90px;
-    color: tomato;
-}
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+
+@import './layout/header'

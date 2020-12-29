@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Project-Booking | Single Place for All Your Bookings</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Test test</h1>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.png" alt="logo">
+        <form class="header__search">
+           <input type="text" placeholder="Search Hotels">
+           <button type="button">
+               <svg>
+                   <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+               </svg>
+           </button>
+        </form>
+        <div class="header__nav">
+            <div class="header__icon">
+                <svg>
+                    <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                </svg>
+                <span>12</span>
+            </div>
+            <div class="header__icon">
+                <svg>
+                    <use xlink:href="./img/sprite.svg#icon-chat"></use>
+                </svg>
+                <span>4</span>
+            </div>
+            <div class="header__icon">
+                <img src="./img/user.jpg" alt="profile-pic">
+            </div>
+        </div>
+    </header>
 </body>
 </html>

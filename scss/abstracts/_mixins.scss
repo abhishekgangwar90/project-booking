@@ -1,0 +1,15 @@
+@mixin center-hz-vz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-same-axis {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin center-cross-axis {
+    display: flex;
+    align-items: center;
+}
