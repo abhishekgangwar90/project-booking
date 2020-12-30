@@ -16,6 +16,7 @@ nav{
 
         & li{
             position: relative;
+            outline: none;
             
             & a{
                 width: 100%;
@@ -58,11 +59,12 @@ nav{
         }
 
 
-        // animate to 100% when hover on li
-        & li:hover::before{
+        // animate to 100% when hover on li or used tab
+        & li:hover::before, li:focus::before{
             width: 100%;
             transform: scaleY(1);
         }
+
     }
 
 

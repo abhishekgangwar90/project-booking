@@ -71,7 +71,8 @@ body {
   font-size: 1.6rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: var(--line); }
   .header__logo {
     height: 3.5rem; }
   .header__nav {
@@ -131,7 +132,8 @@ nav {
     width: 100%;
     font-size: 1.8rem; }
     nav ul li {
-      position: relative; }
+      position: relative;
+      outline: none; }
       nav ul li a {
         width: 100%;
         position: relative;
@@ -159,7 +161,7 @@ nav {
       background-color: var(--color-primary);
       transform: scaleY(0);
       transition: transform 0.2s, width 0.8s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, --webkit-transform 0.2s; }
-    nav ul li:hover::before {
+    nav ul li:hover::before, nav ul li:focus::before {
       width: 100%;
       transform: scaleY(1); }
   nav .legal-text {
