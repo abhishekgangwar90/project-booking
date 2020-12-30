@@ -1,0 +1,72 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 17%;
+    font-size: 1.4rem;
+    color: var(--color-grey-light-1);
+    padding: 2rem 0;
+    background-color: var(--color-grey-dark-1);
+
+
+    & ul{
+        list-style: none;
+        width: 100%;
+        font-size: 1.8rem;
+
+        & li{
+            position: relative;
+            
+            & a{
+                width: 100%;
+                position: relative;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 1.5rem 4rem;
+                color: white;
+                text-decoration: none;
+
+                & svg{
+                    fill: currentColor;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    margin-right: 2rem;
+                }
+            }
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+
+        // used for animation
+        & li::before{
+            content:'';
+            top:0;
+            left:0;
+            width: 1%;
+            position: absolute;
+            height: 100%;
+            background-color: var(--color-primary);
+            transform: scaleY(0);
+            transition: transform .2s,
+                        width .8s cubic-bezier(1, 0, 0, 1) .2s,
+                        background-color 0.1s, 
+                        --webkit-transform 0.2s;
+        }
+
+
+        // animate to 100% when hover on li
+        & li:hover::before{
+            width: 100%;
+            transform: scaleY(1);
+        }
+    }
+
+
+    & .legal-text{
+        text-align: center;
+    }
+}

@@ -4,4 +4,11 @@
 @import './base/base';
 @import './base/typography';
 
-@import './layout/header'
+@import './components/search';
+
+@import './layout/header';
+@import './layout/main-section';
+@import './layout/nav';
+
+@import './pages/home'
+

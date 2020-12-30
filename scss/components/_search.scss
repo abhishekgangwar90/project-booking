@@ -1,0 +1,39 @@
+.search{
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: center;
+
+    input{
+        width: 60%;
+        height: 4rem;
+        padding: 1rem 3rem;
+        font-size: inherit;
+        font-family: inherit;
+        margin-right: -4.5rem;
+        border-radius: 4rem;
+        color: var(--color-grey-dark-2);
+        outline: none;
+        border: none;
+        transition: all 0.3s;
+
+        &::-webkit-input-placeholder{
+            color: var(--color-grey-dark-3);
+        }
+
+        &:focus{
+            width: 70%;
+        }
+    }
+
+    button{
+        border: none;
+        outline: none;
+        background: transparent;
+
+        svg{
+            height: 2rem;
+            width: 2rem;
+            fill: var(--color-grey-dark-3)
+        }
+    }
+}
